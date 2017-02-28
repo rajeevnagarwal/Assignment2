@@ -9,7 +9,18 @@ public class FileOperations {
     public static File openFile(String filename,String extension)
     {
         try {
-            String path = "./src/Assignment/Data/"+filename + "." + extension;
+            String path="";
+            if(filename.contains("bitmap")){
+                path = "./src/Assignment/Databitmap/" + filename + "." + extension;
+
+            }
+            else if(filename.contains("bitslice")){
+                path = "./src/Assignment/Databitslice/" + filename + "." + extension;
+
+            }
+            else {
+                path = "./src/Assignment/Data/" + filename + "." + extension;
+            }
             File file = new File(path);
             /*if (!file.exists()) {
                return file.createNewFile()?file:null;

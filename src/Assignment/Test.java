@@ -9,7 +9,8 @@ import java.util.*;
 public class Test {
     public static void main(String[] args)
     {
-        experiment(25);
+        //generateData();
+        Storage.storeMaps(2);
 
     }
     public static void generateData()
