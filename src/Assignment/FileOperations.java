@@ -11,7 +11,7 @@ public class FileOperations {
         try {
             String path="";
             if(filename.contains("bitmap")){
-                path = "./src/Assignment/Databitmap/" + filename + "." + extension;
+                path = "./src/Assignment/Data/BitMap/" + filename + "." + extension;
 
             }
             else if(filename.contains("bitslice")){
@@ -20,6 +20,30 @@ public class FileOperations {
             }
             else {
                 path = "./src/Assignment/Data/" + filename + "." + extension;
+            }
+            File file = new File(path);
+            /*if (!file.exists()) {
+               return file.createNewFile()?file:null;
+            }
+            else
+            {
+                return file;
+            }*/
+            return file;
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+            return null;
+        }
+    }
+    public static File openFile(String filename,String extension,int flag)
+    {
+        try {
+            String path="";
+            if(flag==0)
+            {
+                path = "./src/Assignment/Data/BitMap/" + filename + "." + extension;
             }
             File file = new File(path);
             /*if (!file.exists()) {

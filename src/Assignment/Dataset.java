@@ -26,7 +26,7 @@ public class Dataset {
 
     public static Integer getRandomInteger(Random r)
     {
-        return r.nextInt((50000-1)+1);
+        return r.nextInt((2500-1)+1);
     }
     public static String getRandomString(Random r)
     {

@@ -10,9 +10,16 @@ public class Test {
     public static void main(String[] args)
     {
         //generateData();
-        Storage.storeMaps(2);
+        createBitMap();
+        //Storage.storeMaps(2);
 
     }
+    public static void createBitMap()
+    {
+        BitMap bitmap = new BitMap();
+        bitmap.populateIndex();
+    }
+
     public static void generateData()
     {
         Dataset.generate();
