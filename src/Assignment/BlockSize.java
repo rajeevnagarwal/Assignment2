@@ -7,5 +7,6 @@ public class BlockSize {
     public static Integer blocksize = 300;
     public static Integer blocksizebitmap = 32000;
     public static Integer blocksizebitslice = 32000;
+    public static Integer blocksizebitmaprow = 1000;
 
 }

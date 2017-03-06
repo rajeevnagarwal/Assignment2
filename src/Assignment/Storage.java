@@ -105,7 +105,7 @@ public class Storage {
     {
         String filenamefinal = filename+index;
         File file = openFile(filenamefinal,"csv");
-        System.out.println(file);
+        //System.out.println(file);
         BufferedWriter writer = openWriter(file);
         if(filenamefinal.contains("bitmap")){
 

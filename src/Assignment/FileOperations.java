@@ -40,11 +40,14 @@ public class FileOperations {
     public static File openFile(String filename,String extension,int flag)
     {
         try {
-            String path="";
-            if(flag==0)
-            {
+            String path = "";
+            if (flag == 0) {
                 path = "./src/Assignment/Data/BitMap/" + filename + "." + extension;
             }
+            if (flag == 1) {
+                path = "./src/Assignment/Data/BitMapRow/" + filename + "." + extension;
+            }
+
             File file = new File(path);
             /*if (!file.exists()) {
                return file.createNewFile()?file:null;
